@@ -142,7 +142,7 @@ class MirrorListener(listeners.MirrorListeners):
                     share_url += '/'
                 msg += f'\n\n<b>Shareable Link🔗:</b> {share_url}\n\nStream Link🖥:{share_url}?a=view'
             if self.tag is not None:
-                msg += f'\n\ncc: @{self.tag}\n  For More @FC_Links'
+                msg += f'\n\ncc: @{self.tag}\n  For More @films_and_trends'
             try:
                 fs_utils.clean_download(download_dict[self.uid].path())
             except FileNotFoundError:
