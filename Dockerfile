@@ -22,3 +22,6 @@ COPY netrc /root/.netrc
 RUN chmod +x aria.sh
 
 CMD ["bash","start.sh"]
+RUN pip3 uninstall appdirs
+RUN pip3 install appdirs
+RUN chmod +x /usr/local/bin/extract
