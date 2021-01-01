@@ -12,7 +12,7 @@ COPY extract /usr/local/bin
 RUN chmod +x /usr/local/bin/extract
 RUN pip3 uninstall appdirs
 RUN pip3 install appdirs
-RUN pip3 install --no-cache-dir -r requirements.txt && \
+RUN pip3 install --no-cache-dir -r requirements.txt
     apt-get -qq purge git
 
 RUN locale-gen en_US.UTF-8
